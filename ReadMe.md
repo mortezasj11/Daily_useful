@@ -14,7 +14,6 @@ root_dir/
     ├── Patient1/
     │ ├── PET.nii
     │ └── Seg.nii
-
     ├── Patient2/
     │ ├── PET.nii
     │ └── Seg.nii
