@@ -11,13 +11,13 @@ Ensure your data is organized as follows within the specified root directory:
 
 ```
 root_dir/
-└── folder/
-├── Patient1/
-│ ├── PET.nii
-│ └── Seg.nii
-├── Patient2/
-│ ├── PET.nii
-│ └── Seg.nii
+    └── folder/
+        ├── Patient1/
+        │ ├── PET.nii
+        │ └── Seg.nii
+        ├── Patient2/
+        │ ├── PET.nii
+        │ └── Seg.nii
 ...
 ```
 
