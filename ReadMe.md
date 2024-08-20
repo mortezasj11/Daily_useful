@@ -1,7 +1,9 @@
 
 
 #  Calculation_MTV_TLG_SUVmax_SUVpeak
-![MTV and TLG Extraction](/images/MTV.png)
+<!-- ![MTV and TLG Extraction](/images/MTV.png) -->
+<img src="/images/MTV.png" alt="MTV and TLG Extraction" width="300">
+
 ## Overview
 This tool automates the calculation of Metabolic Tumor Volume (MTV), Total Lesion Glycolysis (TLG), SUVmax, and SUVpeak from PET scan. 
 It leverages Python's powerful libraries and parallel processing capabilities to efficiently process large datasets.
