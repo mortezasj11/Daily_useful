@@ -106,6 +106,7 @@ def main():
     parser.add_argument('--root_dir', type=str, default='/Data/Mori/others_data/xxxx/', help='Root directory for segment files')
     parser.add_argument('--suv_file', type=str, default='PET.nii', help='Filename for SUV data')
     parser.add_argument('--seg_file', type=str, default='Seg.nii', help='Filename for segmentation data')
+    parser.add_argument('--num_cores', type=int, default=4, help='Number of cores to use for parallel processing')
     args = parser.parse_args()
 
     root_dir_Seg = os.path.join(args.root_dir, args.folder)
@@ -113,7 +114,7 @@ def main():
     list_of_patients =  [ i for i in os.listdir(root_dir_Seg)  ]
 
     inputs = range(len(list_of_patients))
-    num_cores = min(50, len(inputs))
+    num_cores = min(args.num_cores, len(inputs))
     dfs = Parallel(n_jobs=num_cores)(delayed(processInput)(i, root_dir_Seg, all_col, args.suv_file, args.seg_file, list_of_patients) for i in inputs)
     df = pd.concat(dfs, ignore_index=True)
     output_file = os.path.join(args.root_dir, args.folder + '.csv')

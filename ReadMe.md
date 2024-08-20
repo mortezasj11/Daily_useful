@@ -33,12 +33,21 @@ docker run -it --rm --gpus all --shm-size=150G --user $(id -u):$(id -g) --cpuset
 
 
 2. **Run the analysis:**
+
+## Usage
+
+The script `mtv_tlg_main.py` can be executed with the following command-line arguments to configure its behavior:
+
+- `--num_cores <number>`: Specify the number of cores to use for parallel processing. Example: `10`.
+- `--root_dir <path>`: Set the root directory where the data files are located. Example: `/path/to/data/`.
+- `--folder <name>`: Specify the subfolder within the root directory that contains the data. Example: `test`.
+- `--suv_file <filename>`: Define the filename for the SUV data. Example: `PET.nii`.
+- `--seg_file <filename>`: Define the filename for the segmentation data. Example: `Seg.nii`.
+
+### Example Command
 ```sh
-python mtv_tlg_main.py --root_dir /path/to/data/ --folder test --suv_file PET.nii --seg_file Seg.nii
+python mtv_tlg_main.py --num_cores 10 --root_dir /path/to/data/ --folder test --suv_file PET.nii --seg_file Seg.nii
 ```
-
-
-#######################################################################################################################
 
 
 
