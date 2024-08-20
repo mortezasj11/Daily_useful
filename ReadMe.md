@@ -43,6 +43,7 @@ python mtv_tlg_main.py --root_dir /path/to/data/ --folder test --suv_file PET.ni
 
 
 #  Anonymize_Dicom_files
+<img src="/images/anonymize.png" alt="anonymize Dicom" width="300">
 ```sh
 python anonymize.py --input_dir "Path to the input" --output_dir "Path to the output directory"
 ```
