@@ -9,15 +9,17 @@ It leverages Python's powerful libraries and parallel processing capabilities to
 ## Folder Structure
 Ensure your data is organized as follows within the specified root directory:
 
+```
 root_dir/
 └── folder/
-    ├── Patient1/
-    │ ├── PET.nii
-    │ └── Seg.nii
-    ├── Patient2/
-    │ ├── PET.nii
-    │ └── Seg.nii
-    ...
+├── Patient1/
+│ ├── PET.nii
+│ └── Seg.nii
+├── Patient2/
+│ ├── PET.nii
+│ └── Seg.nii
+...
+```
 
 1. **Docker Support**
 ```sh
