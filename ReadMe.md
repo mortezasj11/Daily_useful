@@ -1,6 +1,6 @@
 
 
-# PET/CT Imaging Analysis Tool
+#  Calculation_MTV_TLG_SUVmax_SUVpeak
 
 ## Overview
 This tool automates the calculation of Metabolic Tumor Volume (MTV), Total Lesion Glycolysis (TLG), SUVmax, and SUVpeak from PET scan. 
@@ -40,7 +40,7 @@ python mtv_tlg_main.py --root_dir /path/to/data/ --folder test --suv_file PET.ni
 
 
 
-# Anonymize Dicom CT
+#  Anonymize_Dicom_files
 ```sh
 python anonymize.py --input_dir "Path to the input" --output_dir "Path to the output directory"
 ```
