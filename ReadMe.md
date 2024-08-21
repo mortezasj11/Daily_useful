@@ -31,6 +31,12 @@ docker run -it --rm --gpus all --shm-size=150G --user $(id -u):$(id -g) --cpuset
 --name pix2pix2 pix2pix:latest
 ```
 
+docker run -it --rm --gpus all --shm-size=150G --user root --cpuset-cpus=200-251 \
+-v /rsrch1/ip/msalehjahromi/codes/:/Code \
+-v /rsrch7/wulab/:/Data \
+--name pix2pix33 pix2pix:latest
+
+
 
 2. **Run the analysis:**
 
@@ -74,3 +80,9 @@ docker run -it --rm --gpus all --shm-size=150G --user $(id -u):$(id -g) --cpuset
 -v /rsrch7/wulab/Mori/:/Data \
 --name pix2pix2 pix2pix:latest
 ```
+
+
+#  DataAugmentation2D_pytorch
+Visualizing 2D data augmentation in pytorch.
+
+<img src="/images/Aug.png" alt="anonymize Dicom" width="300">
