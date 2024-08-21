@@ -5,8 +5,7 @@
 <img src="/images/MTV.png" alt="MTV and TLG Extraction" width="300">
 
 ### Overview
-This tool automates the calculation of Metabolic Tumor Volume (MTV), Total Lesion Glycolysis (TLG), SUVmax, and SUVpeak from PET scan. 
-It leverages Python's powerful libraries and parallel processing capabilities to efficiently process large datasets.
+This tool automates the calculation of Metabolic Tumor Volume (MTV), Total Lesion Glycolysis (TLG), SUVmax, and SUVpeak from PET scans (with tumor segmentation) Nifti files. It uses  parallel processing to efficiently handle large datasets, saving results in a CSV file for analysis.
 
 ### Folder Structure
 Ensure your data is organized as follows within the specified root directory:
