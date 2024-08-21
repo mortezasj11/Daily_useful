@@ -1,6 +1,6 @@
 
 
-#  Calculation_MTV_TLG_SUVmax_SUVpeak
+#  MTV_TLG_SUVmax
 <!-- ![MTV and TLG Extraction](/images/MTV.png) -->
 <img src="/images/MTV.png" alt="MTV and TLG Extraction" width="300">
 
@@ -56,7 +56,7 @@ python mtv_tlg_main.py --num_cores 10 --root_dir /path/to/data/ --folder test --
 
 
 
-#  Anonymize_Dicom_files
+#  AnonymizeDicomFiles
 <img src="/images/anonymize.png" alt="anonymize Dicom" width="300">
 ```sh
 python anonymize.py --input_dir "Path to the input" --output_dir "Path to the output directory"
@@ -81,7 +81,7 @@ docker run -it --rm --gpus all --shm-size=150G --user $(id -u):$(id -g) --cpuset
 ```
 
 
-#  DataAugmentation2D_pytorch
-Visualizing 2D data augmentation in pytorch.
+#  DataAug2DPytorch
+Visualizing 2D data augmentation in pytorch to see the effect of diff parameters.
 
 <img src="/images/Aug.png" alt="anonymize Dicom" width="300">
